@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="canvas" nsURI="http://www.kybele.es/projects/elastic/models/canvas/0.1"
+    nsPrefix="canvas">
+  <eClassifiers xsi:type="ecore:EClass" name="CanvasBusinessModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="canvasDiagram" eType="#//CanvasDiagram"
+        containment="true" eOpposite="#//CanvasDiagram/inCanvasBusinessModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CanvasDiagram">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inCanvasBusinessModel"
+        eType="#//CanvasBusinessModel" eOpposite="#//CanvasBusinessModel/canvasDiagram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasKeyPartnersAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasKeyActivitiesAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasKeyResourcesAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasValuePropositionsAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasCustomerRelationshipsAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasChannelsAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasCustomerSegmentsAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasCostStructureAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasRevenueStreamsAnnotations"
+        upperBound="-1" eType="#//CanvasAnnotation" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CanvasAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

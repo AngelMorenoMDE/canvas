@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: INNoVaServ Toolkit Canvas Business Model - Diagram Plug-In
+Bundle-SymbolicName: es.kybele.elastic.models.canvas.diagram; singleton:=true
+Bundle-Version: 0.0.1.a
+Bundle-ClassPath: .
+Bundle-Activator: es.kybele.elastic.models.canvas.diagram.part.CanvasDiagramEditorPlugin
+Bundle-Vendor: Grupo de Investigación Kybele
+Bundle-Localization: plugin
+Export-Package: es.kybele.elastic.models.canvas.diagram.edit.parts,
+ es.kybele.elastic.models.canvas.diagram.part,
+ es.kybele.elastic.models.canvas.diagram.providers
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.core.expressions,
+ org.eclipse.jface,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.views,
+ org.eclipse.ui.navigator,
+ org.eclipse.ui.navigator.resources,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.emf.edit.ui,
+ org.eclipse.gmf.runtime.emf.core,
+ org.eclipse.gmf.runtime.emf.commands.core,
+ org.eclipse.gmf.runtime.emf.ui.properties,
+ org.eclipse.gmf.runtime.diagram.ui,
+ org.eclipse.gmf.runtime.diagram.ui.properties,
+ org.eclipse.gmf.runtime.diagram.ui.providers,
+ org.eclipse.gmf.runtime.diagram.ui.providers.ide,
+ org.eclipse.gmf.runtime.diagram.ui.render,
+ org.eclipse.gmf.runtime.diagram.ui.resources.editor,
+ org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide,
+ org.eclipse.gmf.tooling.runtime;visibility:=reexport,
+ org.eclipse.draw2d;visibility:=reexport,
+ es.kybele.elastic.models.canvas;visibility:=reexport,
+ es.kybele.elastic.models.canvas.edit;visibility:=reexport,
+ org.eclipse.gef;visibility:=reexport,
+ org.eclipse.swt,
+ org.eclipse.ui.workbench,
+ org.eclipse.emf.transaction
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: es.kybele.elastic.models.canvas

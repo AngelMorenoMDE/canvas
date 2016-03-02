@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/es.kybele.elastic.models.canvas/model/canvas.genmodel
+gmf_dashboard/domainModel=platform\:/resource/es.kybele.elastic.models.canvas/model/canvas.ecore
+gmf_dashboard/generationModel=platform\:/resource/es.kybele.elastic.models.canvas/model/canvas.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/es.kybele.elastic.models.canvas/model/canvas.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/es.kybele.elastic.models.canvas/model/canvas.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/es.kybele.elastic.models.canvas/model/canvas.gmftool

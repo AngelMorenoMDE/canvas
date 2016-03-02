@@ -1,0 +1,7 @@
+# Tracing options for the es.kybele.elastic.models.canvas.diagram plug-in
+
+# Common issues
+es.kybele.elastic.models.canvas.diagram/debug=false
+
+# Visual IDs
+es.kybele.elastic.models.canvas.diagram/debug/visualID=false

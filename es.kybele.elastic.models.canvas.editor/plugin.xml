@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated canvas -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="es.kybele.elastic.models.canvas.presentation.CanvasModelWizardID"
+            name="%_UI_CanvasModelWizard_label"
+            class="es.kybele.elastic.models.canvas.presentation.CanvasModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CanvasModelFile.gif">
+         <description>%_UI_CanvasModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated canvas -->
+      <editor
+            id="es.kybele.elastic.models.canvas.presentation.CanvasEditorID"
+            name="%_UI_CanvasEditor_label"
+            icon="icons/full/obj16/CanvasModelFile.gif"
+            extensions="canvas"
+            class="es.kybele.elastic.models.canvas.presentation.CanvasEditor"
+            contributorClass="es.kybele.elastic.models.canvas.presentation.CanvasActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
